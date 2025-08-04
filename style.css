@@ -1,0 +1,92 @@
+/* Base Styles with Icon Support */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header with Icon */
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h1::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f5a9"; /* Plane icon */
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Section Headers with Icons */
+h3::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 8px;
+}
+
+h3[data-icon="flight"]::before {
+    content: "\f072"; /* Plane icon */
+    color: #e74c3c;
+}
+
+h3[data-icon="hotel"]::before {
+    content: "\f594"; /* Hotel icon */
+    color: #2ecc71;
+}
+
+/* Search Form */
+#searchForm {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.form-label::before {
+    font-family: "Font Awesome 6 Free";
+    width: 20px;
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+label[for="from"]::before { content: "\f3c5"; color: #3498db; } /* Location dot */
+label[for="to"]::before { content: "\f3c5"; color: #e74c3c; }
+label[for="start"]::before,
+label[for="checkin"]::before { content: "\f073"; color: #9b59b6; } /* Calendar */
+label[for="city"]::before { content: "\f1ad"; color: #2ecc71; } /* Building */
+
+/* Results Table Icons */
+.table td:first-child::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 8px;
+}
+
+.table tr[data-type="flight"] td:first-child::before {
+    content: "\f072"; /* Plane icon */
+    color: #e74c3c;
+}
+
+.table tr[data-type="hotel"] td:first-child::before {
+    content: "\f594"; /* Hotel icon */
+    color: #2ecc71;
+}
+

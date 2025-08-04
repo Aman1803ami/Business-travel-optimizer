@@ -1,0 +1,18 @@
+{
+  "flights": [
+    {
+      "type": "flight",
+      "price": {"total": "350.00"},
+      "itineraries": [{"duration": "PT6H30M"}],
+      "carrierCode": "DL",
+      "number": "123"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Grand Hotel",
+      "price": 200,
+      "rating": 4.5
+    }
+  ]
+}
