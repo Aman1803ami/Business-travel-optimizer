@@ -3,7 +3,7 @@
 *Optimize business trips with AI-powered flight/hotel recommendations*  
 Ranked by cost, duration, and loyalty scores
 
-![TravelTrail Screenshot](https://cdn.corenexis.com/file?2276747168.png)  
+![TravelTrail Screenshot](https://snipboard.io/WG3TJU.jpg)  
 
 
 ## 🌟 Features
@@ -24,6 +24,7 @@ Ranked by cost, duration, and loyalty scores
 ### 1. Prerequisites
 ```bash
 Python 3.8+ | Git | Pip
+
 
 
 
